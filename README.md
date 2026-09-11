@@ -1,32 +1,29 @@
-# React + TypeScript + Vite
+# My First React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A simple React app built with TypeScript and Vite for the Week 2 guided learning activity.
 
-Currently, two official plugins are available:
+## What it does
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Displays a custom component (`MyComponent`) with a heading and a paragraph, styled with its own CSS file.
 
-## React Compiler
+## Project structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `src/App.tsx` - the main component, renders `MyComponent`
+- `src/MyComponent.tsx` - the custom component with the heading and paragraph
+- `src/MyComponent.css` - styles for `MyComponent`
+- `src/App.css` - centers the component on the page
 
-## Expanding the Oxlint configuration
+## Running it locally
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+npm install
+npm run dev
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Then open http://localhost:5173 in your browser.
+
+## What I learned
+
+- How to scaffold a React + TypeScript project with Vite
+- How to create and style a custom component
+- How to import a component into another component
+- Using git incrementally, with separate commits for each step
